@@ -59,4 +59,10 @@ LinguaMundi::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   root :to => "home#index"
+
+  namespace :api do
+    api do
+      post 'register_user_from_facebook_token'
+    end
+  end
 end
