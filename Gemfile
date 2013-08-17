@@ -26,7 +26,6 @@ gem 'geocoder'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'pg'
 gem 'activerecord-postgresql-adapter'
 gem 'rvm-capistrano'
 
