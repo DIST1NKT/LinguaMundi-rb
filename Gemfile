@@ -28,6 +28,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg'
 gem 'activerecord-postgresql-adapter'
+gem 'rvm-capistrano'
 
 #For the android API
 gem 'fb_graph'
