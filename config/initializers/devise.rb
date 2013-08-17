@@ -44,7 +44,6 @@ Devise.setup do |config|
   # modifying a user and when used to authenticate or find a user. Default is :email.
   config.strip_whitespace_keys = [ :email ]
 
-
   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development? 
 
   config.omniauth :facebook, "APP_ID", "APP_SECRET"
@@ -223,8 +222,6 @@ Devise.setup do |config|
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
 
-  #HEROKU
-  config.assets.initialize_on_precompile = false
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
