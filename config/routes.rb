@@ -61,8 +61,8 @@ LinguaMundi::Application.routes.draw do
   root :to => "home#index"
 
   namespace :api do
-    api do
-      post 'register_user_from_facebook_token'
+    namespace :v1 do
+      post '/register_user_from_facebook_token', to: 'api#register_user_from_facebook_token', as: 'register_facebook_user'
     end
   end
 end
