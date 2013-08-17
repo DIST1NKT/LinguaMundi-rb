@@ -19,7 +19,10 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
-  database: lingua_mundi
+  adapter: postgresql
+  host: localhost
+  database: linguamundi
+  username: linguamundi
+  password: JFKLives2013
   pool: 5
   timeout: 5000
