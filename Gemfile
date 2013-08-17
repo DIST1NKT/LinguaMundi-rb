@@ -26,6 +26,8 @@ gem 'geocoder'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
 
 #For the android API
 gem 'fb_graph'
