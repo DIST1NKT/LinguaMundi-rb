@@ -1,0 +1,25 @@
+<h1>Listing spoken_languages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Flag</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @spoken_languages.each do |spoken_language| %>
+  <tr>
+    <td><%= spoken_language.name %></td>
+    <td><%= spoken_language.flag %></td>
+    <td><%= link_to 'Show', spoken_language %></td>
+    <td><%= link_to 'Edit', edit_spoken_language_path(spoken_language) %></td>
+    <td><%= link_to 'Destroy', spoken_language, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Spoken language', new_spoken_language_path %>

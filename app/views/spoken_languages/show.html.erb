@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @spoken_language.name %>
+</p>
+
+<p>
+  <b>Flag:</b>
+  <%= @spoken_language.flag %>
+</p>
+
+
+<%= link_to 'Edit', edit_spoken_language_path(@spoken_language) %> |
+<%= link_to 'Back', spoken_languages_path %>

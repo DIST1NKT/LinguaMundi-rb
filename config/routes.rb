@@ -1,5 +1,7 @@
 LinguaMundi::Application.routes.draw do
-  devise_for :users
+
+  resources :spoken_languages
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -65,4 +67,8 @@ LinguaMundi::Application.routes.draw do
       post '/register_user_from_facebook_token', to: 'api#register_user_from_facebook_token', as: 'register_facebook_user'
     end
   end
+
+  resources :spoken_languages
+
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 end
