@@ -191,6 +191,7 @@ DEPENDENCIES
   less-rails
   omniauth
   omniauth-facebook
+  pg
   rails (= 3.2.13)
   rvm-capistrano
   sass-rails (~> 3.2.3)
