@@ -11,7 +11,8 @@ class User < ActiveRecord::Base
     :remember_me, :provider, :uid, :name
   # attr_accessible :title, :body
 
-  has_and_belongs_to_many :spoken_languages
+  has_many :language_and_skill_levels
+  has_many :spoken_languages, :through => :language_and_skill_levels
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first

@@ -36,6 +36,10 @@ gem 'rvm-capistrano'
 #For the android API
 gem 'fb_graph'
 
+#Guard
+gem 'rb-fsevent'
+gem 'guard-livereload'
+
 
 #Bootstrap
 gem "therubyracer"

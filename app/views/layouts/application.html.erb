@@ -44,12 +44,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">LinguaMundi</a>
+          <%= link_to 'LinguaMundi', root_path, :class => "brand" %>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              
+
+              <% if current_user.present? %>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= current_user.name %> <b class="caret"></b></a> 
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><%= link_to 'Edit my public profile', edit_user_registration_path(current_user) %></li>
+                  </ul>
+                </li>
+              <% end %>
+
               <% unless current_user.present? %>
               <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
               <% else %>
