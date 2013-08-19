@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require select2
+//= require set_languages
+//= require jquery.ui.all
 //= require_tree .

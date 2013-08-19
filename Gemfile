@@ -43,6 +43,10 @@ gem 'guard-livereload'
 
 gem 'simple_form'
 
+gem 'language_list'
+gem "select2-rails"
+gem 'jquery-ui-rails'
+
 
 #Bootstrap
 gem "therubyracer"

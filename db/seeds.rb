@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+all_languages = LanguageList::ALL_LANGUAGES
+
+
+for lang in all_languages
+	SpokenLanguage.create(:name => lang.name.force_encoding("UTF-8"))
+	puts "Added " + lang.name.force_encoding("UTF-8")
+end
