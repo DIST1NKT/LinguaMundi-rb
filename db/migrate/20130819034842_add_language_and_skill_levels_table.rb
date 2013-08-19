@@ -4,6 +4,7 @@ class AddLanguageAndSkillLevelsTable < ActiveRecord::Migration
   		t.integer :user_id, :null => false
   		t.integer :spoken_language_id, :null => false
   		t.integer :skill_level, :null => false
+  		t.timestamps
   	end
   end
 

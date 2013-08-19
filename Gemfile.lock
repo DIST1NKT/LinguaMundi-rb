@@ -48,7 +48,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    columnize (0.3.6)
     commonjs (0.2.6)
+    debugger (1.6.0)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.2.1)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.2.2)
     devise (2.2.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -177,6 +184,9 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simple_form (2.0.4)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     slop (3.4.4)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -210,6 +220,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-postgresql-adapter
   coffee-rails (~> 3.2.1)
+  debugger
   devise
   fb_graph
   geocoder
@@ -223,6 +234,7 @@ DEPENDENCIES
   rb-fsevent
   rvm-capistrano
   sass-rails (~> 3.2.3)
+  simple_form
   sqlite3
   therubyracer
   twitter-bootstrap-rails

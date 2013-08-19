@@ -27,6 +27,7 @@ end
 
 gem 'jquery-rails'
 gem 'geocoder'
+gem 'debugger'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -39,6 +40,8 @@ gem 'fb_graph'
 #Guard
 gem 'rb-fsevent'
 gem 'guard-livereload'
+
+gem 'simple_form'
 
 
 #Bootstrap

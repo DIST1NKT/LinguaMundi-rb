@@ -69,6 +69,8 @@ LinguaMundi::Application.routes.draw do
   end
 
   resources :spoken_languages
+  get '/set_languages', to: 'set_languages#set'
+
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 end

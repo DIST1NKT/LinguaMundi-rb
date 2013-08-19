@@ -3,6 +3,8 @@ class LanguageAndSkillLevel < ActiveRecord::Base
   belongs_to :user
   belongs_to :spoken_language
 
-  attr_accessible :skill_level
+  validates_presence_of :user, :spoken_language, :skill_level
+
+  attr_accessible :skill_level, :user_id, :spoken_language_id
 
 end
