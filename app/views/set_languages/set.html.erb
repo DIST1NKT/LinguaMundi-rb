@@ -7,6 +7,11 @@
 
 <%= form_tag '/set_languages_post' do %>
 	<%= select_tag "Language", options_from_collection_for_select(LanguageList::ALL_LANGUAGES, "iso_639_1", "name", :width => "500px") %>
-	<input type="text" id="skill" />
+	<input type="hidden" id="skill" />
+	<br />
+	<span>Skill Level: <span id="skill_level">Beginner</span></span>
+	<br /><br />
 	<div id="slider"></div>
+	<br />
+	<%= submit_tag 'Add Language' %>
 <% end %>

@@ -70,7 +70,7 @@ LinguaMundi::Application.routes.draw do
 
   resources :spoken_languages
   get '/set_languages', to: 'set_languages#set'
-
+  post '/set_languages_post', to: 'set_languages#post'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 end

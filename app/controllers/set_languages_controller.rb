@@ -8,4 +8,9 @@ class SetLanguagesController < ApplicationController
 		end
 
 	end
+
+	def post
+
+		debugger
+	end
 end
