@@ -1,5 +1,5 @@
 class SpokenLanguage < ActiveRecord::Base
-  attr_accessible :flag, :name
+  attr_accessible :flag, :name, :iso_639_1_code
 
   has_and_belongs_to_many :users
 

@@ -10,6 +10,7 @@ all_languages = LanguageList::ALL_LANGUAGES
 
 
 for lang in all_languages
-	SpokenLanguage.create(:name => lang.name.force_encoding("UTF-8"))
+	SpokenLanguage.create(	:name => lang.name.force_encoding("UTF-8"),
+							:iso_639_1_code => lang.iso_639_1.force_encoding("UTF-8"))
 	puts "Added " + lang.name.force_encoding("UTF-8")
 end
