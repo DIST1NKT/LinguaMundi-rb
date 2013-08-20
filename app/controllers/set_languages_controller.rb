@@ -1,5 +1,7 @@
 class SetLanguagesController < ApplicationController
 
+	before_filter :authenticate_user!
+
 	def set
 		if not current_user.present?
 			redirect_to root_path, :alert => "You aren't logged in yet, so you can't do that."
@@ -23,7 +25,7 @@ class SetLanguagesController < ApplicationController
 
 		#If language exists:
 		current_user.add_language_and_skill_level(lang,params[:skill])
-		redirect_to current_user, :notice => "#{lang.name} successfully added to your profile" and return
+		redirect_to user_path(current_user), :notice => "#{lang.name} successfully added to your profile" and return
 
 	end
 end

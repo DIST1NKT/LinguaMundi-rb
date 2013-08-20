@@ -53,6 +53,7 @@
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= current_user.name %> <b class="caret"></b></a> 
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><%= link_to 'My Public Profile', current_user %></li>
                     <li><%= link_to 'Edit my public profile', edit_user_registration_path(current_user) %></li>
                   </ul>
                 </li>
